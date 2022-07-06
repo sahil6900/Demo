@@ -1,0 +1,123 @@
+Onkar@LAPTOP-S74ICSUC MINGW64 /d/Git-Push
+$ git clone https://github.com/sahil6900/Demo.git
+Cloning into 'Demo'...
+remote: Enumerating objects: 68, done.
+remote: Counting objects: 100% (68/68), done.
+remote: Compressing objects: 100% (48/48), done.
+remote: Total 68 (delta 3), reused 3 (delta 0), pack-reused 0
+Receiving objects: 100% (68/68), 20.95 KiB | 108.00 KiB/s, done.
+Resolving deltas: 100% (3/3), done.
+
+Onkar@LAPTOP-S74ICSUC MINGW64 /d/Git-Push
+$ git branch omi
+fatal: not a git repository (or any of the parent directories): .git
+
+Onkar@LAPTOP-S74ICSUC MINGW64 /d/Git-Push
+$ git init
+Initialized empty Git repository in D:/Git-Push/.git/
+
+Onkar@LAPTOP-S74ICSUC MINGW64 /d/Git-Push (master)
+$ git branch omi
+fatal: not a valid object name: 'master'
+
+Onkar@LAPTOP-S74ICSUC MINGW64 /d/Git-Push (master)
+$ git branch
+
+Onkar@LAPTOP-S74ICSUC MINGW64 /d/Git-Push (master)
+$ cd D:\Git-Push\Demo
+bash: cd: D:Git-PushDemo: No such file or directory
+
+Onkar@LAPTOP-S74ICSUC MINGW64 /d/Git-Push (master)
+$ cd /d/git-pushdemo
+bash: cd: /d/git-pushdemo: No such file or directory
+
+Onkar@LAPTOP-S74ICSUC MINGW64 /d/Git-Push (master)
+$ cd
+
+Onkar@LAPTOP-S74ICSUC MINGW64 ~ (feature)
+$ cd /D:Git-Push/Demo
+bash: cd: /D:Git-Push/Demo: No such file or directory
+
+Onkar@LAPTOP-S74ICSUC MINGW64 ~ (feature)
+$ cd D:/Git-push/Demo
+
+Onkar@LAPTOP-S74ICSUC MINGW64 /d/Git-push/Demo (main)
+$ git init
+Reinitialized existing Git repository in D:/Git-Push/Demo/.git/
+
+Onkar@LAPTOP-S74ICSUC MINGW64 /d/Git-push/Demo (main)
+$ git branch omi
+
+Onkar@LAPTOP-S74ICSUC MINGW64 /d/Git-push/Demo (main)
+$ git checkout omi
+Switched to branch 'omi'
+
+Onkar@LAPTOP-S74ICSUC MINGW64 /d/Git-push/Demo (omi)
+$ touch sahil.txt
+
+Onkar@LAPTOP-S74ICSUC MINGW64 /d/Git-push/Demo (omi)
+$ start sahil.txt
+
+Onkar@LAPTOP-S74ICSUC MINGW64 /d/Git-push/Demo (omi)
+$ git add sahil.txt
+
+Onkar@LAPTOP-S74ICSUC MINGW64 /d/Git-push/Demo (omi)
+$ git commit -m"first commit"
+[omi 4cc7386] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 sahil.txt
+
+Onkar@LAPTOP-S74ICSUC MINGW64 /d/Git-push/Demo (omi)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Onkar@LAPTOP-S74ICSUC MINGW64 /d/Git-push/Demo (main)
+$ git merge omi
+Updating de7fb07..4cc7386
+Fast-forward
+ sahil.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 sahil.txt
+
+Onkar@LAPTOP-S74ICSUC MINGW64 /d/Git-push/Demo (main)
+$ git push
+remote: Permission to sahil6900/Demo.git denied to r3onkar.
+fatal: unable to access 'https://github.com/sahil6900/Demo.git/': The requested URL returned error: 403
+
+Onkar@LAPTOP-S74ICSUC MINGW64 /d/Git-push/Demo (main)
+$ git remote -v
+origin  https://github.com/sahil6900/Demo.git (fetch)
+origin  https://github.com/sahil6900/Demo.git (push)
+
+Onkar@LAPTOP-S74ICSUC MINGW64 /d/Git-push/Demo (main)
+$ git push
+fatal: Response status code does not indicate success: 401 (Unauthorized).
+sahil.mnbvcxzA9
+remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.
+remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.
+fatal: Authentication failed for 'https://github.com/sahil6900/Demo.git/'
+
+Onkar@LAPTOP-S74ICSUC MINGW64 /d/Git-push/Demo (main)
+$ sahil.mnbvcxzA9
+bash: sahil.mnbvcxzA9: command not found
+
+Onkar@LAPTOP-S74ICSUC MINGW64 /d/Git-push/Demo (main)
+$ git push
+fatal: Response status code does not indicate success: 401 (Unauthorized).
+remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.
+remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.
+fatal: Authentication failed for 'https://github.com/sahil6900/Demo.git/'
+
+Onkar@LAPTOP-S74ICSUC MINGW64 /d/Git-push/Demo (main)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 316 bytes | 316.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/sahil6900/Demo.git
+   de7fb07..4cc7386  main -> main
+
+Onk
